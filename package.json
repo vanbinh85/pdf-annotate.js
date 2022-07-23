@@ -6,7 +6,8 @@
   "scripts": {
     "test": "karma start --single-run",
     "start": "./scripts/web",
-    "build": "MINIFY=1 webpack",
+    "example": "http-server ./docs --port 8080",
+    "build": "webpack",
     "coveralls": "cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "files": [
